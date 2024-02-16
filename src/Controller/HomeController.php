@@ -20,12 +20,12 @@ class HomeController extends Controller
         //$response = $client->patch('/posts/1');
         //$response = $client->delete('/posts/1');
 
-        return $this->json($response);
+        //return $this->json($response);
 
-        //  return $this->render("home/index", [
-        //            "pageTitle"=> "Welcome to /home",
-        //            "data"=>$response
-        //        ]);
+          return $this->render("home/index", [
+                    "pageTitle"=> "Welcome to /home",
+                    "data"=>$response
+                ]);
     }
 
     #[Route(uri: "/home/show/{id}", name: "app_home_show", methods: ["GET", "POST"])]

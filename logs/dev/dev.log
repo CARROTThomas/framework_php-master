@@ -1,3 +1,9 @@
+EXCEPTION
+2024/02/16 12:00:09
+/Users/thomas/Documents/projets/framework_php-master/core/Kernel/Kernel.php
+line : 47
+Call to a member function getMethods() on null0
+
 ERROR
 2024/02/16 10:41:39
 /Users/thomas/Documents/projets/framework_php-master/core/HttpClient/HttpClient.php

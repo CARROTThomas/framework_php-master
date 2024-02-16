@@ -5,7 +5,7 @@ namespace Core\Kernel;
 use Core\Debugging\Debugger;
 use Core\Http\Request;
 use Core\Http\Response;
-use Core\Router\Router;
+use Core\Route\Router;
 use Core\ServiceContainer\ServiceContainer;
 use Core\Session\Session;
 
@@ -52,8 +52,6 @@ class Kernel
                 $method = $controllerAndMethod->getMethod();
                 $uriData= $controllerAndMethod->getUriData();
 
-                //$dependencies = $serviceContainer->resolveMethod($controller, $method);
-                //$arguments = array_merge($dependencies, []);
 
                 return $controller->$method(...$uriData);
                 //call_user_func_array([$controller, $method], $arguments);
